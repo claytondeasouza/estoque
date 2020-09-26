@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8">
+<title>Cadastro de Usuários AIG</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<form>
+			<div class="form-row">
+				<h2 align="center">Dados do Colaborador AIG</h2>
+				<div class="form-group col-md-6">
+					<label for="data_cadastro">Data de Cadastro</label> <input
+						type="date" class="form-control" id="data" name="data"> <label
+						for="eid">EID</label> <input type="text" class="form-control"
+						id="eid" placeholder="Digite o número EID" name="eid"> <label
+						for="ramal">Ramal</label> <input type="text" class="form-control"
+						id="ramal" placeholder="Digite o ramal" name="ramal">
+
+				</div>
+				<div class="form-group col-md-6">
+
+					<label for="nome">Nome</label> <input type="text"
+						class="form-control" id="user"
+						placeholder="Digite o nome do usuário" name="name"> <label
+						for="email">E-mail</label> <input type="text" class="form-control"
+						id="email" placeholder="Digite e-mail" name="email"> <label
+						for="depto">Departamento</label> <input type="text"
+						class="form-control" id="depto"
+						placeholder="Digite o Departamento" name="depto">
+				</div>
+
+				<div class="form-group col-md-2">
+					<label>Colaborador</label>
+					<div class="radio">
+						<label for="aig"> <input type="radio" id="aig" name="aig">
+							AIG
+						</label>
+					</div>
+					<div class="radio">
+						<label for="terceiro"> <input type="radio" id="terceiro"
+							name="terceiro"> Parceiro Externo
+						</label>
+					</div>
+				</div>
+				<div class="form-row">
+
+					<div class="form-group col-md-6">
+						<div class="form-group">
+							<label for="local">Local de Trabalho</label> <select
+								class="form-control" id="filiais" name="filiais">
+								<option value="" selected="selected">Selecione o Local
+									de Trabalho</option>
+								<option value="Sao Paulo">São Paulo - SP 17º andar</option>
+								<option value="Sao Paulo">São Paulo - SP 18º andar</option>
+								<option value="Campinas">Campinas - SP</option>
+								<option value="Rio de Janeiro">Rio de Janeiro - RJ</option>
+								<option value="Curitiba">Curitiba - PR</option>
+								<option value="Belo Horizonte">Belo Horizonte - MG</option>
+								<option value="Porto Alegre">Porto Alegre - RS</option>
+								<option value="Home Office">Home Office</option>
+							</select> <label for="nome">Posição da Mesa</label> <input type="text"
+								class="form-control" id="user"
+								placeholder="Digite a Posição da mesa de Trabalho"
+								name="poicaomesa"> <label for="gestor">Gestor(a)</label>
+							<input type="text" class="form-control" id="gestor"
+								placeholder="Digite o nome do Gestor(a)" name="gestor">
+						</div>
+					</div>
+					<div class="form-group col-md-12">
+						<h2 align="center">Equipamentos de TI</h2>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="local">Monitor 1</label> <select class="form-control"
+							id="desktop" name="desktop">
+							<option value="" selected="selected">Selecione o Modelo
+								do Monitor</option>
+							<option value="monitor">Monitor Dell P170ST</option>
+							<option value="monitor">Monitor Dell P170ST</option>
+							<option value="monitor">Monitor Dell P1913T</option>
+							<option value="monitor">Monitor Dell P2414Hb</option>
+							<option value="monitor">Monitor Dell 1708FPT</option>
+							<option value="monitor">Monitor Dell P2414H</option>
+							<option value="monitor">Monitor Dell 1708FPt</option>
+						</select> <label for="local">Monitor 2</label> <select class="form-control"
+							id="desktop" name="desktop">
+							<option value="" selected="selected">Selecione o Modelo
+								do Monitor</option>
+							<option value="monitor">Monitor Dell P170ST</option>
+							<option value="monitor">Monitor Dell P170ST</option>
+							<option value="monitor">Monitor Dell P1913T</option>
+							<option value="monitor">Monitor Dell P2414Hb</option>
+							<option value="monitor">Monitor Dell 1708FPT</option>
+							<option value="monitor">Monitor Dell P2414H</option>
+							<option value="monitor">Monitor Dell 1708FPt</option>
+						</select> <label for="local">DockStation</label> <select
+							class="form-control" id="dock" name="dokstation">
+							<option value="" selected="selected">Selecione o Modelo
+								do Dockstation</option>
+							<option value="dock">Dockstation Dell PROX2</option>
+							<option value="dock">Dockstation Dell PROX3</option>
+							<option value="dock">Dockstation Dell K17A</option>
+						</select> <label for="local">Computadores</label> <select
+							class="form-control" id="desktop" name="desktop">
+							<option value="" selected="selected">Selecione o Modelo
+								do Computador</option>
+							<option value="notebook">Notebook Latitude E6420</option>
+							<option value="notebook">Notebook Latitude E6430</option>
+							<option value="notebook">Notebook Latitude E7240</option>
+							<option value="notebook">Notebook Latitude E7250</option>
+							<option value="notebook">Notebook Latitude E6230</option>
+							<option value="notebook">Notebook Latitude E7440</option>
+							<option value="notebook">Notebook Latitude E5400</option>
+							<option value="notebook">Notebook Latitude E7280</option>
+							<option value="desktop">Desktop Optiplex 3020</option>
+							<option value="desktop">Desktop Optiplex 7010</option>
+							<option value="desktop">Desktop Optiplex 790</option>
+
+						</select> <label for="nome">Aparelho Telefonico Avaya</label> <input
+							type="text" class="form-control" id="user"
+							placeholder="Digite o Modelo do Aparelho Telefonico" name="avaya">
+
+					</div>
+					<div class="form-group col-md-6">
+						<label for="nome">Patrimonio 1</label> <input type="text"
+							class="form-control" id="user"
+							placeholder="Digite o Patrimonio do equipamento"
+							name="patrimonio"> <label for="nome">Patrimonio 2</label>
+						<input type="text" class="form-control" id="user"
+							placeholder="Digite o Patrimonio do equipamento"
+							name="patrimonio"> <label for="nome">Patrimonio 3</label>
+						<input type="text" class="form-control" id="user"
+							placeholder="Digite o Patrimonio do equipamento"
+							name="patrimonio"> <label for="nome">Patrimonio 4</label>
+						<input type="text" class="form-control" id="user"
+							placeholder="Digite o Patrimonio do equipamento"
+							name="patrimonio"> <label for="nome">Patrimonio 5</label>
+						<input type="text" class="form-control" id="user"
+							placeholder="Digite o Patrimonio do equipamento"
+							name="patrimonio">
+
+					</div>
+
+					<div class="form-group col-md-12">
+						<button>SALVAR</button>
+						<button>EDITAR</button>
+						<button>EXCLUIR</button>
+						<button>PESQUISAR</button>
+					</div>
+</body>
+
+
+
+
+</html>

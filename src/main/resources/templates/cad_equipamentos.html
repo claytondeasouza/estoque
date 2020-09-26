@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Cadastro de Usuários AIG</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+
+<form>
+  <div class="form-row">
+  	<h2 align="center">Cadastro de Equipamentos de TI</h2>
+  	<div class="form-group col-md-6">
+  		<label for="data_cadastro">Data de Cadastro</label>
+                  <input type="date" class="form-control" id="data" name="data">
+                  <label for="local">Computadores</label>
+                  <select class="form-control" id="desktop" name="desktop">
+                    <option value="" selected="selected">Selecione o Modelo do Computador</option>
+                    <option value="notebook">Notebook Latitude E6420</option>
+                    <option value="notebook">Notebook Latitude E6430</option>
+                    <option value="notebook">Notebook Latitude E7240</option>
+                    <option value="notebook">Notebook Latitude E7250</option>
+                    <option value="notebook">Notebook Latitude E6230</option>
+                    <option value="notebook">Notebook Latitude E7440</option>
+                    <option value="notebook">Notebook Latitude E5400</option>
+                    <option value="notebook">Notebook Latitude E7280</option>
+                    <option value="desktop">Desktop Optiplex 3020</option>
+                     <option value="desktop">Desktop Optiplex 7010</option>
+                      <option value="desktop">Desktop Optiplex 790</option>
+                    
+                                     </select>
+                                      
+                   <label for="local">DockStation</label>
+                  <select class="form-control" id="dock" name="dokstation">
+                    <option value="" selected="selected">Selecione o Modelo do Dockstation</option>
+                    <option value="dock">Dockstation Dell PROX2</option>
+                     <option value="dock">Dockstation Dell PROX3</option>
+                    <option value="dock">Dockstation Dell K17A</option>
+                    </select>
+                    
+                  <label for="local">Monitores</label>
+                  <select class="form-control" id="desktop" name="desktop">
+                    <option value="" selected="selected">Selecione o Modelo do Monitor</option>
+                    <option value="monitor">Monitor Dell P170ST</option>
+                    <option value="monitor">Monitor Dell P170ST</option>
+                    <option value="monitor">Monitor Dell P1913T</option>
+                    <option value="monitor">Monitor Dell P2414Hb</option>
+                    <option value="monitor">Monitor Dell 1708FPT </option>
+                    <option value="monitor">Monitor Dell P2414H</option>
+                    <option value="monitor">Monitor Dell 1708FPt</option>
+                      </select>
+                     
+
+  	</div>
+    <div class="form-group col-md-6">
+
+        <label for="nome">Analista</label>
+                  <input type="text" class="form-control" id="analista" placeholder="Digite o Nome do Analista" name="analista">
+
+
+                  <label for="nome">Patrimonio do Computador</label>
+                  <input type="text" class="form-control" id="user" placeholder="Digite o número do Patrimonio do Computador" name="patrimonio">
+                 
+
+                  
+                      <label for="nome">Patrimonio da Dockstation</label>
+                  <input type="text" class="form-control" id="user" placeholder="Digite o número do Patrimonio da Dockstation" name="patrimonio">
+
+                    <label for="nome">Patrimonio do Monitor</label>
+                  <input type="text" class="form-control" id="user" placeholder="Digite o número do Patrimonio do Monitor" name="patrimonio">
+                     
+    </div>
+    
+   
+    <div class="form-group col-md-6">
+ <label for="checklist">Checklist ou Nota Fiscal</label>
+                  <input type="file" id="checklist" name="checklist">
+    
+              </div>
+              <div class="form-group col-md-12">
+   <button>SALVAR</button><button>EDITAR</button><button>EXCLUIR</button><button>PESQUISAR</button>
+</div>
+</form>
+                  
+                </div>
+
+            </body>
+
+ 
+
+
+</html>

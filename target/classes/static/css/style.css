@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #fff;
+}
+.container
+{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	min-height: 400px;
+}
+.full-width
+{
+	width: 100%;
+}
+
+nav
+{
+	width: 100%;
+}
+nav ul
+{
+	margin: 20px;
+	padding: 0;
+	border-radius: 4px;
+	background: #3E6EFF;
+	th: #fff;
+	overflow: hidden;
+}
+nav ul li
+{
+	list-style: none;
+	display: inline-block;
+	th: #fff;
+	active: #fff;
+}
+nav ul li a
+{
+	display: block;
+	padding: 15px 20px;
+	th: #fff;
+	color: #fff;
+	text-decoration: none;
+}
+.active,
+nav ul li a:hover
+{
+	background: #480AFF;
+	th: #fff;
+}
+.col-7
+{
+	width: 70%;
+	min-height: 400px;
+	float: left;
+}
+.col-3
+{
+	width: 28%;
+	min-height: 400px;
+	background: #f1f1f1;
+	float: right;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.margin-top20px
+{
+margin-top: 20px;
+}
+.post
+{
+	background: #ccc;
+	padding: 20px;
+	background: #f1f1f1;
+}
+.post-teste
+{
+	background: red;
+	padding: 20px;
+	background: #f1f1f1;
+}
+img
+{
+	max-width: 100%;
+}
+h1
+{
+	margin:10px 0;
+	font-family: Lobster, cursive;
+	color: red;
+}
+h2
+{
+	margin:10px 0;
+	font-family: Lobster, cursive;
+	color: #0EAC8F;
+}
+.col-3 ul
+{
+	margin: 0;
+	padding: 0;
+}
+.col-3 ul li
+{
+	list-style: none;
+	padding: 8px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.col-3 ul li:hover
+{
+	background: #f00;
+	color: #fff;
+}
+
+/*estilo do formulário*/
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.footer-text
+{
+	padding-top: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+/* estilo do rodapé */
+
+footer{
+	display: block;
+	color: #d6d6d6;
+	grid-template-rows: 10px;
+	background-color: #0EAC8F;
+	text-align: center;
+}
+footer h3{
+	font-size: 50px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+
+/* estilo da redes sociais */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/*Estilo do Arcodeon*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/*Estilo das Fotos (galeria)*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media (max-width: 900px)
+{
+		.container
+		{
+			width: 100%;
+		}
+		nav ul li
+		{
+			display: block;
+			text-align: center;
+		}
+		.col-7,
+		.col-3
+		{
+			width: 100%;
+			float: none;
+		}
+		.col-3
+		{
+			margin-top: 20px;
+		}
+}
